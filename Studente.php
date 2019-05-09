@@ -3,6 +3,8 @@
  * Classe di esempio
  * @author Enrico Zimuel (enrico.zimuel@its-ictpiemonte.it)
  */
+declare(strict_types=1);
+
 class Studente {
     public $nome;
     public $cognome;
