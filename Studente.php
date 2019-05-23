@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Classe di esempio
  * @author Enrico Zimuel (enrico.zimuel@its-ictpiemonte.it)
@@ -34,17 +34,3 @@ class Studente {
         return array_sum($this->corsi) / count($this->corsi);
     }
 }
-
-$studente = new Studente();
-$studente->nome = 'Mario';
-$studente->cognome = 'Rossi';
-$studente->email = 'mario.rossi@itspiemonte.it';
-$studente->dataDiNascita = '1/1/1995';
-
-$studente->addCorso('Cloud Services');
-$studente->addCorso('PHP Programming');
-
-$studente->addVotoEsame('Cloud Services', 24);
-$studente->addVotoEsame('PHP Programming', 26);
-
-printf("Media voto esami: %.2f\n", $studente->getMediaEsami());
